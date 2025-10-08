@@ -1,0 +1,145 @@
+body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #101820;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.7;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 12px 20px;
+      background-color: #5f5e5e;
+      backdrop-filter: blur(4px);
+      border-bottom: 2px solid #a7c9e4;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    header .logo {
+      width: 90px;
+      height: auto;
+      display: block;
+      margin: 0 auto 5px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #0c2c48;
+      margin: 6px 0 4px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #1b3b59;
+      margin-top: 0;
+    }
+
+    .card {
+      background-color: #2F5D50;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: block;
+      color: #123048;
+    }
+
+    select,
+    input,
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: 1px solid #888;
+      font-size: 1rem;
+      background-color: #ffffff;
+    }
+
+    .budget-options {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .budget {
+      flex: 1;
+      text-align: center;
+      padding: 15px;
+      border: 2px solid #aaa;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+      background-color: #f3f6fa;
+      color: #202b3f;
+    }
+
+    .budget.selected {
+      border-color: #2c6aad;
+      background-color: #d6e7f8;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #2c6aad;
+      color: white;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1e4d87;
+    }
+
+    #response {
+      margin-top: 25px;
+      padding: 20px;
+      background-color: #f0f7fc;
+      border-radius: 12px;
+      border: 1px solid #a3d0ee;
+      line-height: 1.6;
+      color: #1e2f3f;
+    }
+
+    #response h2 {
+      font-size: 1.4rem;
+      color: #0a2f55;
+      margin-top: 20px;
+    }
+
+    #response h3 {
+      font-size: 1.2rem;
+      color: #114477;
+      margin-top: 15px;
+    }
+
+    #response ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    #response p {
+      margin-bottom: 10px;
+    }
